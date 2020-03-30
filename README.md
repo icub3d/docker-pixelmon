@@ -1,5 +1,6 @@
 # Docker-Pixelmon v7.2.2
 ![ydaft](https://forthebadge.com/images/badges/you-didnt-ask-for-this.svg)
+<br>
 ![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg) [![Mirroredfromucode](https://img.shields.io/badge/Mirrored-from%20ucodespace--git-blue)](https://git.ucode.space)
 
 DockerFile for Pixelmon Mod
