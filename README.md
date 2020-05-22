@@ -1,4 +1,4 @@
-# Docker-Pixelmon v7.2.2
+# Docker-Pixelmon v7.3.1
 ![ydaft](https://forthebadge.com/images/badges/you-didnt-ask-for-this.svg)
 <br>
 ![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg) 
@@ -9,7 +9,7 @@
 
 DockerFile for Pixelmon Mod
 ## Versions
-pixelmon reforged v7.2.2<br/>
+pixelmon reforged v7.3.1<br/>
 spongeforge v2768-7.1.5<br/>
 forge v14.23.5.2838<br/>
 

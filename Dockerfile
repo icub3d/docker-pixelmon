@@ -11,7 +11,7 @@ RUN mkdir /pixelmon && \
 mkdir /pixelmon/mods && \
 wget -O /pixelmon/forge-installer.jar https://files.minecraftforge.net/maven/net/minecraftforge/forge/1.12.2-14.23.5.2838/forge-1.12.2-14.23.5.2838-installer.jar && \
 wget -O /pixelmon/mods/spongeforge-1.12.2-2768-7.1.5.jar https://repo.spongepowered.org/maven/org/spongepowered/spongeforge/1.12.2-2838-7.1.9/spongeforge-1.12.2-2838-7.1.9.jar && \
-wget -O /pixelmon/mods/Pixelmon-1.12.2-7.2.0-server.jar https://download.nodecdn.net/containers/reforged/server/release/7.2.2/Pixelmon-1.12.2-7.2.2-server.jar && \
+wget -O /pixelmon/mods/Pixelmon-1.12.2-7.2.0-server.jar https://download.nodecdn.net/containers/reforged/server/release/7.3.1/Pixelmon-1.12.2-7.3.1-server.jar && \
 cd /pixelmon && \
 echo eula=true > eula.txt && \
 java -jar forge-installer.jar --installServer && \
