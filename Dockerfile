@@ -5,6 +5,9 @@ LABEL maintainer "Phil K (ucode1337/ucode.space)"
 EXPOSE 25565/tcp
 EXPOSE 25565/udp
 
+ENV Xms=1G
+ENV Xmx=4G
+
 RUN apk add --update --no-cache openjdk8-jre wget
 
 RUN mkdir /pixelmon && \
@@ -19,7 +22,7 @@ ln -s forge-1.12.2-14.23.5.2838-universal.jar forge.jar && \
 rm -f forge-installer.jar && \
 echo \#\!/bin/sh > /pixelmon/start-server.sh && \
 echo cd '"$(dirname "$(readlink -fn "$0")")"' >> /pixelmon/start-server.sh && \
-echo java -Xms1G -Xmx4G -jar forge.jar >> /pixelmon/start-server.sh && \
+echo java -Xms${Xms} -Xmx${Xmx} -jar forge.jar >> /pixelmon/start-server.sh && \
 chmod +x /pixelmon/start-server.sh && \
 cp -r /pixelmon /opt/
 

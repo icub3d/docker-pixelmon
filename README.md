@@ -22,16 +22,17 @@ docker run -d -p 25565:25565/tcp -p 25565:25565/udp ucode1337/pixelmon_reforged
 
 ### If you want to have a X gb ram Server just do
 ```bash
-mkdir build
-cd build
-wget https://raw.githubusercontent.com/ucodespace/docker-pixelmon/master/Dockerfile
+docker run -d -e Xms=1G -e Xmx=6G -p 25565:25565/tcp -p 25565:25565/udp ucode1337/pixelmon_reforged
 ```
-#### EDIT THE Dockerfile e.x. nano Dockerfile
-```bash
-docker build -t pixelmon-local .
-docker run -d -p 25565:25565/tcp -p 25565:25565/udp pixelmon-local
-cd ..
-rm -rf build
-```
+Xms = Min Memory Allocation
+Xmx = Max Memory Allocation
 
+### Build from Source
+```bash
+git clone https://git.ucode.space/Phil/docker-pixelmon-reforged.git
+cd docker-pixelmon-reforged
+nano Dockerfile # if you want to change something
+docker build . -t pixelmon
+docker run -d -e Xms=1G -e Xmx=6G -p 25565:25565/tcp -p 25565:25565/udp pixelmon
+```
 #### Enjoy
