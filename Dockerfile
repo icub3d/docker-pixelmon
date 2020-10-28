@@ -26,6 +26,7 @@ echo java -Xms${Xms} -Xmx${Xmx} -jar forge.jar >> /pixelmon/start-server.sh && \
 chmod +x /pixelmon/start-server.sh && \
 cp -r /pixelmon /opt/
 
+WORKDIR /pixelmon
 VOLUME /pixelmon
 
 CMD ["/bin/sh", "/pixelmon/start-server.sh"]
