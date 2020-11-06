@@ -18,7 +18,7 @@ wget -O /pixelmon/mods/Pixelmon-server.jar https://download.nodecdn.net/containe
 cd /pixelmon && \
 echo eula=true > eula.txt && \
 java -jar forge-installer.jar --installServer && \
-ln -s forge-1.12.2-14.23.5.2854-universal.jar forge.jar && \
+ln -s forge-1.12.2-14.23.5.2854*.jar forge.jar && \
 rm -f forge-installer.jar && \
 echo \#\!/bin/sh > /pixelmon/start-server.sh && \
 echo cd '"$(dirname "$(readlink -fn "$0")")"' >> /pixelmon/start-server.sh && \
