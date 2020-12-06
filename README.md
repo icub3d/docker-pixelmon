@@ -28,7 +28,8 @@ Xms = Min Memory Allocation
 Xmx = Max Memory Allocation
 
 ### To attach to console
-```docker attach yourcontainername
+```bash
+docker attach yourcontainername
 ```
 Run your commands
 To exit: CTRL+P CTRL+Q
