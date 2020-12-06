@@ -30,10 +30,9 @@ Xmx = Max Memory Allocation
 ### To attach to console
 ```docker attach yourcontainername
 ```
-```Run your commands
-```
-```To exit: CTRL+P CTRL+Q
-```
+Run your commands
+To exit: CTRL+P CTRL+Q
+
 
 ### Build from Source
 ```bash
