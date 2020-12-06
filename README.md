@@ -17,15 +17,23 @@ forge 1.12.2-14.23.5.2854<br/>
 
 ### If you want to have a 4gb ram Server just do
 ```bash
-docker run -d -p 25565:25565/tcp -p 25565:25565/udp ucode1337/pixelmon_reforged
+docker run -dit -p 25565:25565/tcp -p 25565:25565/udp --name yourcontainername ucode1337/pixelmon_reforged
 ```
 
 ### If you want to have a X gb ram Server just do
 ```bash
-docker run -d -e Xms=1G -e Xmx=6G -p 25565:25565/tcp -p 25565:25565/udp ucode1337/pixelmon_reforged
+docker run -dit -e Xms=1G -e Xmx=6G -p 25565:25565/tcp -p 25565:25565/udp --name yourcontainername ucode1337/pixelmon_reforged
 ```
 Xms = Min Memory Allocation
 Xmx = Max Memory Allocation
+
+### To attach to console
+```docker attach yourcontainername
+```
+```Run your commands
+```
+```To exit: CTRL+P CTRL+Q
+```
 
 ### Build from Source
 ```bash
