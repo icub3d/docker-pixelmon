@@ -41,6 +41,6 @@ git clone https://git.ucode.space/Phil/docker-pixelmon-reforged.git
 cd docker-pixelmon-reforged
 nano Dockerfile # if you want to change something
 docker build . -t pixelmon
-docker run -d -e Xms=1G -e Xmx=6G -p 25565:25565/tcp -p 25565:25565/udp pixelmon
+docker run -dit -e Xms=1G -e Xmx=6G -p 25565:25565/tcp -p 25565:25565/udp --name yourcontainername pixelmon
 ```
 #### Enjoy
