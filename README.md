@@ -1,6 +1,4 @@
 # Docker-Pixelmon 1.12.2-8.1.2
-![ydaft](https://forthebadge.com/images/badges/you-didnt-ask-for-this.svg)
-<br>
 ![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg) 
 <br>
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/2d4b9c99d204400fa5ee652734d25974)](https://www.codacy.com/manual/ucodespace/docker-pixelmon?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ucodespace/docker-pixelmon&amp;utm_campaign=Badge_Grade)
