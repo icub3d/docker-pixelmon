@@ -8,7 +8,7 @@ EXPOSE 25565/udp
 ENV Xms=1G
 ENV Xmx=4G
 
-RUN apk add --update --no-cache openjdk8-jre wget
+RUN apk add --update --no-cache openjdk8-jre wget nss
 
 VOLUME /data
 
