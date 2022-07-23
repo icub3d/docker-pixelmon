@@ -16,4 +16,4 @@ COPY files /data
 
 WORKDIR /data
 
-ENTRYPOINT ["java", "-Xms1G", "-Xmx4G", "-server", "-jar", "/data/forge.jar", "nogui"]
+ENTRYPOINT ["java", "-Xms1G", "-Xmx4G", "-server", "-jar", "/data/forge.jar", "-Dlog4j.configurationFile=log4j2_112-116.xml", "nogui"]
